@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;  */
+    /* height: 100vh; */
+    /* background-image: url("../images/background.png"); */
+    background-repeat: repeat;
+    height: auto;
+    background-color: #e5e5f7;
+    /* opacity: 0.4; */
+    background-image: radial-gradient(#778da9 0.7000000000000001px, #e5e5f7 0.7000000000000001px);
+    background-size: 14px 14px;
+}
+
+.head {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    background-color: #1b263b;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* p {
+    font-size: 20px;
+    margin: 20px;
+    background-color: #1b263b;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+input, .Dept {
+    padding-right: 15px;
+    width: calc(50% - 2px);
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+.inputs {
+    width: 1000px;
+    margin: auto;
+}
+
+.searchinput {
+    width: 1000px;
+    margin-left: 3px;
+}
+
+.salary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.salary input {
+    width: calc(25% - 5px);
+
+}
+
+button {
+    color: white;
+    background-color: #1b263b;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    border: 0;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #0d1b2a;
+
+}
+
+.search button {
+    width: calc(52% - 32px);
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+table th {
+    color: white;
+    background-color:#1b263b;
+    padding: 15px;
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 10px;
+
+}
+
+table td {
+    color: black;
+    padding: 15px;
+    border: 1px solid white;
+    font-size: 22px;
+    margin: 5px;
+
+}
+
+table tr:hover {
+    background-color: #778da9;
+    color: black;
+
+}
+
+/* for mobile view  */
+.employee-box {
+    display: none; /* Hide by default */
+    border: 1px solid #1b263b;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.employee-box div {
+    margin: 5px 0;
+}
+
+.employee-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Mobile Responsive CSS */
+@media (min-width: 320px) and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 30px;
+        padding: 8px;
+    }
+
+    input, .Dept {
+        width: 100%;
+        font-size: 18px;
+        height: 40px;
+    }
+   
+    .inputs  {
+        width: 90%;
+        margin: auto;
+         align-items: center;
+        justify-content: center; 
+
+    }
+    .searchinput {
+        width: 100%;
+        margin: auto;
+         align-items: center;
+        justify-content: center;
+
+    }
+    .save {
+        margin-bottom: 1rem;
+    }
+
+
+    .salary {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .salary input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 18px;
+        height: 40px;
+    }
+
+    .search button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .result table {
+        display: none; /* Hide the table */
+    }
+    .employee-box {
+        display: block;
+        background-color: white;
+        border: 1px solid #1b263b;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .employee-box div {
+        margin-bottom: 8px;
+    }
+    .employee-box div span {
+        font-weight: bold;
+    }
+    .employee-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
