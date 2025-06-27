@@ -14,33 +14,26 @@
     <h1> Employee Management </h1> <br>
   </div>
   <div class="inputs">
-    <input type="text" placeholder="Employee Name " id="name">
-    <select name="" id="dept" class="Dept">
+    <input type="text" placeholder="Employee Name " id="name" class="employee-name">
+    <select name="" id="dept" class="Dept department">
       <option value="" selected disabled>Department</option>
       <option value="human resourse" >HR</option>
       <option value="Marketting">Marketting</option>
       <option value="Sales">Sales</option>
       <option value="Finanace">Finance</option>
-      
-
-
     </select>
-    <div class="salary">
-      <input onkeyup="calc_salary()" type="text" placeholder="salary" id="salary">
-      <input onkeyup="calc_salary()" type="text" placeholder="Insurance" id="insurance">
-      <input onkeyup="calc_salary()" type="text" placeholder="Tax" id="tax">
-      <input onkeyup="calc_salary()" type="text" placeholder="Net salary" id="netSalary" readonly>
-    </div>
+
+    <input onkeyup="calc_salary()" type="text" placeholder="salary" id="salary" class="salary-input">
+    <input onkeyup="calc_salary()" type="text" placeholder="Insurance" id="insurance" class="salary-input">
+    <input onkeyup="calc_salary()" type="text" placeholder="Tax" id="tax" class="salary-input">
+    <input onkeyup="calc_salary()" type="text" placeholder="Net salary" id="netSalary" readonly class="salary-input">
 
     <button class="save" id="save"> Save </button>
 
+    <input onkeyup="searchData(this.value)" type="text" class="searchinput" placeholder="" id="search">
 
-    <div class="search">
-      <input onkeyup="searchData(this.value)" type="text" class="searchinput" placeholder="" id="search">
-      <button  class="searchName" id="searchName" onclick="getSearchType(this.id)" >Search By Name</button>
-      <button class="searchSection"  id="searchSection" onclick="getSearchType(this.id)">Search By Section</button>
-    
-    </div>
+    <button  class="searchName" id="searchName" onclick="getSearchType(this.id)" >Search By Name</button>
+    <button class="searchSection"  id="searchSection" onclick="getSearchType(this.id)">Search By Section</button>
 
     <button class="delete" onclick="deleteAllData()" id="delete" >Delete All</button>
     
@@ -60,12 +53,6 @@
       </table>
       <div id="employee-container"></div>
     </div>
-
-    
-
-
-
-
   </div>
 
   
